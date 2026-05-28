@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RecceLab - Rally Recon Tool</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      #map-container {
+        height: 400px;
+        margin-bottom: 20px;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+      button {
+        padding: 10px 15px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      video {
+        width: 100%;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RecceLab</h1>
+    <button id="openVideoBtn">Open Video</button>
+    <div id="video-container">
+      <video id="recceVideo" controls></video>
+    </div>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="./src/renderer.js"></script>
+  </body>
+</html>
